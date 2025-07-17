@@ -31,22 +31,6 @@ Translatron is an advanced multilingual video translation tool designed to autom
 | Subtitle Handling  | pysrt, SRT manipulation                      |
 
 
- 📂 Project Structure
-
-Translatron/
-│
-├── app.py                      
-├── video_processor.py         
-├── templates/
-│   └── index.html              
-├── static/
-│   └── output/                 
-├── models/                     
-├── README.md
-└── requirements.txt
-```
-
-
  🔧 How It Works
 
 1. 🎥 Upload any video with speech.
