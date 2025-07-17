@@ -94,7 +94,6 @@ python app.py
 
  🙋‍♀️ Made With ❤️ By
 
-**Amulya B R**
-B.E CSE (AI) | Final Year Project
+**Amulya**
 *“Breaking language and emotional barriers through AI-powered video translation.”*
 
