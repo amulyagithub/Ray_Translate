@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Translator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>🎥 Video Translator</h1>
+    <form id="uploadForm" enctype="multipart/form-data" method="POST" action="/upload">
+        <label for="video">Upload Video:</label>
+        <input type="file" id="video" name="video" accept="video/mp4" required><br><br>
+
+    <label for="language">Select Target Language:</label>
+
+<select id="language" name="language" required>
+    <option value="af-ZA-AdriNeural">African - (Female)</option>
+    <option value="af-ZA-WillemNeural">African - (male)</option>
+    <option value="ar-BH-LailaNeural">Arabic - (Female)</option>
+    <option value="ar-DZ-IsmaelNeural">Arabic - (male)</option>
+    <option value="bn-BD-PradeepNeural">Bengali - (male)</option>
+    <option value="bn-IN-TanishaaNeural">Bengali - (Female)</option>
+    <option value="en-US-GuyNeural">English - (Male)</option>
+    <option value="en-US-JennyNeural">English - (Female)</option>
+    <option value="fr-BE-CharlineNeural">French - (Female)</option>
+    <option value="fr-BE-GerardNeural">French - (male)</option>
+    <option value="ka-GE-EkaNeural">Georgian - (Female)</option>
+    <option value="ka-GE-GiorgiNeural">Georgian - (male)</option>
+    <option value="de-DE-AmalaNeural">German - (Female)</option>
+    <option value="de-DE-ConradNeural">German - (male)</option>
+    <option value="el-GR-AthinaNeural">Greek - (Female)</option>
+    <option value="el-GR-NestorasNeural">Greek - (male)</option>
+    <option value="gu-IN-DhwaniNeural">Gujarati - (Female)</option>
+    <option value="gu-IN-NiranjanNeural">Gujarati - (male)</option>
+    <option value="hi-IN-MadhurNeural">Hindi - (Male)</option>
+    <option value="hi-IN-SwaraNeural">Hindi - (Female)</option>
+    <option value="it-IT-DiegoNeural">Italian - (male)</option>
+    <option value="it-IT-IsabellaNeural">Italian - (Female)</option>
+    <option value="ja-JP-KeitaNeural">Japanese - (male)</option>
+    <option value="ja-JP-NanamiNeural">Japanese - (Female)</option>
+    <option value="kn-IN-GaganNeural">Kannada - (male)</option>
+    <option value="kn-IN-SapnaNeural">Kannada - (Female)</option>
+    <option value="ko-KR-SunHiNeural">Korean - (Female)</option>
+    <option value="ko-KR-InJoonNeural">Korean - (male)</option>
+    <option value="ml-IN-MidhunNeural">Malayalam - (male)</option>
+    <option value="ml-IN-SobhanaNeural">Malayalam - (Female)</option>
+    <option value="mr-IN-AarohiNeural">Marathi - (Female)</option>
+    <option value="mr-IN-ManoharNeural">Marathi - (male)</option>
+    <option value="ne-NP-HemkalaNeural">Nepali - (Female)</option>
+    <option value="ne-NP-SagarNeural">Nepali - (male)</option>
+    <option value="pt-BR-FranciscaNeural">Portuguese - (Female)</option>
+    <option value="pt-PT-DuarteNeural">Portuguese - (male)</option>
+    <option value="ru-RU-DmitryNeural">Russian - (male)</option>
+    <option value="SvetlanaNeural">Russian - (Female)</option>
+    <option value="es-US-AlonsoNeural">Spanish - (male)</option>
+    <option value="es-US-PalomaNeural">Spanish - (Female)</option>
+    <option value="ta-MY-KaniNeural">Tamil - (Female)</option>
+    <option value="ta-SG-AnbuNeural">Tamil - (male)</option>
+    <option value="te-IN-ShrutiNeural">Telugu - (Female)</option>
+    <option value="te-IN-MohanNeural">Telugu - (male)</option>
+    <option value="ur-IN-SalmanNeural">Urdu - (male)</option>
+    <option value="ur-PK-UzmaNeural">Urdu - (Female)</option>
+    <!-- Add more voices as needed -->
+</select><br><br>
+
+    <button type="submit">Upload and Translate</button>
+</form>
+
+<div id="result"></div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

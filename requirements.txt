@@ -1,0 +1,6 @@
+Flask
+openai-whisper
+translatepy
+edge-tts
+pysrt
+ffmpeg-python
